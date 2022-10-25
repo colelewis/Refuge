@@ -207,7 +207,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1895069846
+--- !u!1 &1679910864
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -215,37 +215,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1895069849}
-  - component: {fileID: 1895069848}
-  - component: {fileID: 1895069847}
+  - component: {fileID: 1679910867}
+  - component: {fileID: 1679910866}
+  - component: {fileID: 1679910865}
   m_Layer: 0
-  m_Name: Terrain_(0.00, 0.00, -1000.00)
+  m_Name: Terrain (0,-1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
---- !u!154 &1895069847
+--- !u!154 &1679910865
 TerrainCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1895069846}
+  m_GameObject: {fileID: 1679910864}
   m_Material: {fileID: 0}
   m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: def81a0adfc06a5769326a25b2637808, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: fc9208ba3f895b112a6d1d28546f34aa, type: 2}
   m_EnableTreeColliders: 1
---- !u!218 &1895069848
+--- !u!218 &1679910866
 Terrain:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1895069846}
+  m_GameObject: {fileID: 1679910864}
   m_Enabled: 1
   serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: def81a0adfc06a5769326a25b2637808, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: fc9208ba3f895b112a6d1d28546f34aa, type: 2}
   m_TreeDistance: 5000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
@@ -270,13 +270,13 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
---- !u!4 &1895069849
+--- !u!4 &1679910867
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1895069846}
+  m_GameObject: {fileID: 1679910864}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1000}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -391,7 +391,7 @@ GameObject:
   - component: {fileID: 2065354953}
   - component: {fileID: 2065354952}
   m_Layer: 0
-  m_Name: Terrain
+  m_Name: Terrain (0, 0) (x,z)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
