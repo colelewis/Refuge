@@ -20,7 +20,8 @@ public class CreativePlayerMovement : MonoBehaviour
         float horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
         float verticalMovement = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
         Vector3 playerMovement = camera.transform.right * horizontalMovement + camera.transform.forward * verticalMovement;
-        // playerMovement.y = 0f;
+        
+        // playerMovement.y = 0f; // flight
 
         c.Move(playerMovement);
 
