@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2448356341487856747}
-  m_Layer: 0
-  m_Name: Tower_door
+  m_Layer: 6
+  m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,8 +43,9 @@ GameObject:
   - component: {fileID: 7070584106700304308}
   - component: {fileID: 7340496472759096759}
   - component: {fileID: 3777563679904098650}
-  m_Layer: 0
-  m_Name: Plane
+  - component: {fileID: 775431400269629223}
+  m_Layer: 6
+  m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -115,3 +116,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &775431400269629223
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4035344572925171450}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -462981019419857548, guid: 2ac1fd7f46e204b6a913e2606d3eef3b, type: 3}

@@ -33,6 +33,6 @@ public class CreativePlayerMovement : MonoBehaviour
         cameraRotation.x = 0f;
         cameraRotation.z = 0f;
 
-        transform.rotation = Quaternion.Lerp(transform.rotation, cameraRotation, 0.1f);
+        transform.rotation = Quaternion.Lerp(transform.rotation, cameraRotation, 0.2f);
     }
 }

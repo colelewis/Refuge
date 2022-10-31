@@ -4,25 +4,26 @@ using UnityEngine;
 
 public class ReticleController : MonoBehaviour
 {
+    public float awarenessDistance = 300.0f;
     // Start is called before the first frame update
     void Start()
     {
 
     }
 
+    // Note: this will only interact with objects whose layer is set to Interactable, layer 6
+    // Note 2: objects must have a Mesh Collider with Convex checked to true in order to be detected.
+
+    
     // Update is called once per frame
     void Update() {
-        RaycastHit hit;
-        Ray reticleRay = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f));
-        
-        // // instantiate ray from mouse to ...
-        // Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        if (Physics.Raycast(reticleRay, out hit, 200)) {
-            Debug.Log("I'm looking at: " + hit.transform.name);
+        Ray reticleRay = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f)); // casts ray from center of viewport
+  
+        RaycastHit interactableHit;
+        if (Physics.Raycast(reticleRay, out interactableHit, awarenessDistance, 1<<6)) {
+            Debug.Log("Ray collided with " + interactableHit.transform.name + " at " + interactableHit.point + ", " + interactableHit.distance + " units from the center of the screen.");
+            interactableHit.transform.gameObject.GetComponent<IInteractable>().Interact(); // makes the GameObject that the ray collides with run its Interact() method
         }
-
-        Debug.Log("Ray collided at " + hit.point + ", " + hit.distance + " units from the center of the screen.");
-        Debug.DrawRay(reticleRay.origin, reticleRay.direction * 3000, Color.green);
+        Debug.DrawRay(reticleRay.origin, reticleRay.direction * awarenessDistance, Color.green); // shows when game is paused, helps gauge how far the ray is being cast and whether or not it's colliding with objects
     }
 }
