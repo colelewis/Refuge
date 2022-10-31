@@ -1,28 +1,49 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class ReticleController : MonoBehaviour
 {
     public float awarenessDistance = 300.0f;
-    // Start is called before the first frame update
-    void Start()
-    {
 
+    [SerializeField]
+    private GameObject popUpPanel;
+
+    void Start() {
+        popUpPanel.SetActive(false);
     }
 
-    // Note: this will only interact with objects whose layer is set to Interactable, layer 6
+    Dictionary<string, string> actionMap = new Dictionary<string, string>()
+    { // maps objects to their actions, the action then gets placed on the popup panel (i.e., when door is seen, show open)
+        {"Door", "Open"},
+        {"Switch", "Toggle"},
+        {"Lever", "Pull"}
+    };
+
+
+    // Note: this will only interact with objects whose layer is set to Interactable, layer 6, that's what the 1<<6 is, bit shifting to layer 6
     // Note 2: objects must have a Mesh Collider with Convex checked to true in order to be detected.
 
-    
-    // Update is called once per frame
     void Update() {
         Ray reticleRay = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f)); // casts ray from center of viewport
   
         RaycastHit interactableHit;
         if (Physics.Raycast(reticleRay, out interactableHit, awarenessDistance, 1<<6)) {
             Debug.Log("Ray collided with " + interactableHit.transform.name + " at " + interactableHit.point + ", " + interactableHit.distance + " units from the center of the screen.");
-            interactableHit.transform.gameObject.GetComponent<IInteractable>().Interact(); // makes the GameObject that the ray collides with run its Interact() method
+
+            popUpPanel.SetActive(true); // show panel while reticle is focused over interactable object
+
+            // change popup text to reflect appropriate command for object from dictionary
+            popUpPanel.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = actionMap[interactableHit.transform.name];
+
+            if (Input.GetKeyDown(KeyCode.E)) { // interact with E
+                interactableHit.transform.gameObject.GetComponent<IInteractable>().Interact(); // makes the GameObject that the ray collides with run its Interact() method
+            }
+
+        } else {
+            popUpPanel.SetActive(false);
         }
         Debug.DrawRay(reticleRay.origin, reticleRay.direction * awarenessDistance, Color.green); // shows when game is paused, helps gauge how far the ray is being cast and whether or not it's colliding with objects
     }
