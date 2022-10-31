@@ -6,7 +6,7 @@ using TMPro;
 
 public class ReticleController : MonoBehaviour
 {
-    public float awarenessDistance = 300.0f;
+    public float awarenessDistance = 500.0f;
 
     [SerializeField]
     private GameObject popUpPanel;
