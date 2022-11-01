@@ -17,9 +17,9 @@ public class ReticleController : MonoBehaviour
 
     Dictionary<string, string> actionMap = new Dictionary<string, string>()
     { // maps objects to their actions, the action then gets placed on the popup panel (i.e., when door is seen, show open)
-        {"Door", "Open"},
+        // Door is not listed here since text will be custom based on the Door's state
         {"Switch", "Toggle"},
-        {"Lever", "Pull"}
+        {"Handle", "Push"}
     };
 
 
@@ -33,7 +33,21 @@ public class ReticleController : MonoBehaviour
         if (Physics.Raycast(reticleRay, out interactableHit, awarenessDistance, 1<<6)) {
             Debug.Log("Ray collided with " + interactableHit.transform.name + " at " + interactableHit.point + ", " + interactableHit.distance + " units from the center of the screen.");
 
-            popUpPanel.SetActive(true); // show panel while reticle is focused over interactable object
+            if (interactableHit.transform.name == "Handle" && interactableHit.transform.gameObject.GetComponent<InteractableLever>().activated == true) { // if the lever has already been activated, then don't show a popup 
+                popUpPanel.SetActive(false);
+            }
+            else if (interactableHit.transform.name == "Door" && interactableHit.transform.gameObject.GetComponent<InteractableDoor>().open == true) { // if the door is open, show close
+                popUpPanel.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = "Close";
+            }
+            else if (interactableHit.transform.name == "Door" && interactableHit.transform.gameObject.GetComponent<InteractableDoor>().open == false) { // if the door is closed, then show open
+                popUpPanel.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = "Open";
+            }
+            else if (interactableHit.transform.name == "Door" && interactableHit.transform.gameObject.GetComponent<InteractableDoor>().open == false) { // if the door is locked, then show locked
+                popUpPanel.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = "This door is locked.";
+            }
+            else {
+                popUpPanel.SetActive(true); // show panel while reticle is focused over interactable object
+            }
 
             // change popup text to reflect appropriate command for object from dictionary
             popUpPanel.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = actionMap[interactableHit.transform.name];
