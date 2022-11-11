@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 590690509523058485}
   - component: {fileID: 590690509523058490}
   - component: {fileID: 590690509523058491}
+  - component: {fileID: 1823042410}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -146,7 +147,7 @@ Transform:
   m_GameObject: {fileID: 590690509523058487}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 915, y: 148, z: -465}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 590690511158974933}
@@ -171,7 +172,7 @@ MonoBehaviour:
   walkSpeed: 175
   sprintSpeed: 262.5
   jumpSpeed: 100
-  playerGravity: 50
+  playerGravity: 100
   camera: {fileID: 590690509431738211}
   sensitivity: 2
   xAngleLimit: 45
@@ -207,6 +208,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   awarenessDistance: 500
   popUpPanel: {fileID: 590690509598895507}
+--- !u!114 &1823042410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590690509523058487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fe11d303d81044279b1bafe9c996384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys: []
 --- !u!1 &590690509598895507
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,7 +312,7 @@ GameObject:
   - component: {fileID: 590690510437422912}
   - component: {fileID: 590690510437422915}
   m_Layer: 5
-  m_Name: Canvas (1)
+  m_Name: PopupCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -399,7 +413,7 @@ GameObject:
   - component: {fileID: 590690510560326249}
   - component: {fileID: 590690510560326248}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: HUDCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

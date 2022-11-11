@@ -20,7 +20,10 @@ public class ReticleController : MonoBehaviour
         // Door is not listed here since text will be custom based on the Door's state
         // {"Door", "Open"},
         {"Switch", "Toggle"},
-        {"Handle", "Push"}
+        {"Handle", "Push"},
+        {"RedKey", "Collect"},
+        {"BlueKey", "Collect"},
+        {"GreenKey", "Collect"}
     };
 
 
