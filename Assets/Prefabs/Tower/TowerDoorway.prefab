@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 5336516422365450847}
   - component: {fileID: 9052454037641666042}
   - component: {fileID: 6504378418799208752}
+  - component: {fileID: 2831834716664533951}
+  - component: {fileID: 3125868060918773246}
+  - component: {fileID: 2393710850654770269}
   m_Layer: 0
   m_Name: TowerDoorway
   m_TagString: Untagged
@@ -84,6 +87,45 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2831834716664533951
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4703110160758982885}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01440487, y: 0.018716928, z: 0.06815148}
+  m_Center: {x: 0.00034890213, y: 0.027661236, z: -0.000000002707204}
+--- !u!65 &3125868060918773246
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4703110160758982885}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01440487, y: 0.07403948, z: 0.01597092}
+  m_Center: {x: 0.00034890213, y: -2.4911198e-13, z: 0.026090384}
+--- !u!65 &2393710850654770269
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4703110160758982885}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01440487, y: 0.019094275, z: 0.06815148}
+  m_Center: {x: 0.00034890213, y: -0.027472515, z: -0.0000000027090397}
 --- !u!1 &8187235832190105684
 GameObject:
   m_ObjectHideFlags: 0

@@ -92,6 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3141345007591697498}
+  - component: {fileID: 3393261875580008501}
   m_Layer: 0
   m_Name: TowerWallStraightSlatless
   m_TagString: Untagged
@@ -119,6 +120,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &3393261875580008501
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4158097695604444843}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.0642586, y: 6.428383, z: 0.89559937}
+  m_Center: {x: 7.0657444, y: 0.3963585, z: -24.59871}
 --- !u!1 &4918343336358060422
 GameObject:
   m_ObjectHideFlags: 0
