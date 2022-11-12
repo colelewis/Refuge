@@ -4090,8 +4090,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 590690509523058485, guid: 3545c7eb1a37c498d9fd2a715d9474f5, type: 3}
+      propertyPath: jumpSpeed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 590690509523058485, guid: 3545c7eb1a37c498d9fd2a715d9474f5, type: 3}
       propertyPath: walkSpeed
-      value: 20
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 590690509523058485, guid: 3545c7eb1a37c498d9fd2a715d9474f5, type: 3}
+      propertyPath: sprintSpeed
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 590690509523058485, guid: 3545c7eb1a37c498d9fd2a715d9474f5, type: 3}
       propertyPath: xAngleLimit
@@ -5877,7 +5885,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1500419127
 Transform:
   m_ObjectHideFlags: 0
@@ -6548,7 +6556,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1672510840
 Transform:
   m_ObjectHideFlags: 0
