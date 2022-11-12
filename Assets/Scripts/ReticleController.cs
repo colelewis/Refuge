@@ -20,7 +20,7 @@ public class ReticleController : MonoBehaviour
         // Door is not listed here since text will be custom based on the Door's state
         // {"Door", "Open"},
         {"Switch", "Toggle"},
-        {"Handle", "Push"},
+        {"Handle", "Toggle"},
         {"RedKey", "Collect"},
         {"BlueKey", "Collect"},
         {"GreenKey", "Collect"}
@@ -56,7 +56,7 @@ public class ReticleController : MonoBehaviour
             else {
                 popUpPanel.SetActive(true); // show panel while reticle is focused over interactable object
                 // change popup text to reflect appropriate command for object from dictionary
-                popUpPanel.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = actionMap[interactableHit.transform.name];
+                //popUpPanel.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = actionMap[interactableHit.transform.name];
             }
 
             if (Input.GetKeyDown(KeyCode.E)) { // interact with E

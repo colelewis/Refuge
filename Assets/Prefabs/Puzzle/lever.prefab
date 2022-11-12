@@ -95,7 +95,7 @@ MeshCollider:
   m_GameObject: {fileID: 3787562803108677989}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -107,12 +107,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3787562803108677989}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c802ca10efa2248f885aa3525abc4cd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   activated: 0
+  handle: {fileID: 0}
+  Doors: []
 --- !u!1 &4649749024706720804
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,8 +126,9 @@ GameObject:
   - component: {fileID: 5461998519171460766}
   - component: {fileID: 7584877038301812123}
   - component: {fileID: 6544541070361432803}
-  m_Layer: 0
-  m_Name: lever
+  - component: {fileID: 5133361754046540836}
+  m_Layer: 6
+  m_Name: Lever
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -174,6 +177,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.29815674, y: 0.16036224, z: 1.0459595}
   m_Center: {x: -0.25253296, y: 0.54445267, z: 0.0032653809}
+--- !u!114 &5133361754046540836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4649749024706720804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c802ca10efa2248f885aa3525abc4cd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activated: 0
+  handle: {fileID: 3787562803108677989}
+  Doors: []
 --- !u!1 &5173000206204271377
 GameObject:
   m_ObjectHideFlags: 0
@@ -185,7 +203,7 @@ GameObject:
   - component: {fileID: 9204596934492403195}
   - component: {fileID: 450392623284011877}
   - component: {fileID: 8306344565540954042}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
