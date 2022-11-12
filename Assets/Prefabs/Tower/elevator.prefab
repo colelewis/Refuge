@@ -18,7 +18,6 @@ GameObject:
   - component: {fileID: 5389955782184374123}
   - component: {fileID: 7978490494475482760}
   - component: {fileID: 3537676581834561616}
-  - component: {fileID: 8127241783833932923}
   m_Layer: 0
   m_Name: elevator
   m_TagString: Untagged
@@ -144,8 +143,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.021491937, y: 0.021405028, z: 0.00610569}
-  m_Center: {x: -0.0005939388, y: -0.003989257, z: 0.04128046}
+  m_Size: {x: 0.021491937, y: 0.021405028, z: 0.003906288}
+  m_Center: {x: -0.0005939388, y: -0.0039892565, z: 0.04238016}
 --- !u!65 &5389955782184374123
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -157,8 +156,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.0031914043, y: 0.020248404, z: 0.040216513}
-  m_Center: {x: -0.009744201, y: -0.0045309397, z: 0.018713221}
+  m_Size: {x: 0.0025444317, y: 0.020248404, z: 0.04047523}
+  m_Center: {x: -0.010067686, y: -0.0045309397, z: 0.018842585}
 --- !u!65 &7978490494475482760
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -170,8 +169,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.021491937, y: 0.0051629636, z: 0.045646973}
-  m_Center: {x: -0.0005939388, y: 0.007373352, z: 0.021428527}
+  m_Size: {x: 0.021491937, y: 0.00309265, z: 0.045646973}
+  m_Center: {x: -0.0005939388, y: 0.008408507, z: 0.021428527}
 --- !u!65 &3537676581834561616
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -183,18 +182,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.021491937, y: 0.0041742036, z: 0.039464403}
-  m_Center: {x: -0.0005939388, y: -0.01463714, z: 0.01883178}
---- !u!65 &8127241783833932923
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6048988817689603118}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.021491937, y: 0.024252309, z: 0.0031873311}
-  m_Center: {x: -0.0005939388, y: -0.005342097, z: 0.00004512742}
+  m_Size: {x: 0.021491937, y: 0.002363274, z: 0.039464403}
+  m_Center: {x: -0.0005939388, y: -0.015542598, z: 0.01883178}

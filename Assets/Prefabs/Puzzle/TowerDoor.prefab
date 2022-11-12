@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8335120449003171238}
   - component: {fileID: 6542230761003614563}
+  - component: {fileID: -8179776162626461045}
   m_Layer: 0
   m_Name: TowerDoor
   m_TagString: Untagged
@@ -46,6 +47,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.22259521, y: 5.702385, z: 3.2929077}
   m_Center: {x: 0, y: -0.08382034, z: 0}
+--- !u!114 &-8179776162626461045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4096835455898660163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12be3a0b767210441a42f43b583fafe5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openDistance: 4.58
 --- !u!1 &9063958370088810066
 GameObject:
   m_ObjectHideFlags: 0

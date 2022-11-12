@@ -21,10 +21,19 @@ public class InteractableLever : MonoBehaviour, IInteractable
         if(activated)
         {
             handle.transform.position = new Vector3(handle.transform.position.x, startPos - 0.6f, handle.transform.position.z);
+            
+            foreach(GameObject obj in Doors)
+            {
+                obj.GetComponent<DoorController>().ToggleDoor();
+            }
         }
         else
         {
             handle.transform.position = new Vector3(handle.transform.position.x, startPos, handle.transform.position.z);
+            foreach (GameObject obj in Doors)
+            {
+                obj.GetComponent<DoorController>().ToggleDoor();
+            }
         }
     }
 }
