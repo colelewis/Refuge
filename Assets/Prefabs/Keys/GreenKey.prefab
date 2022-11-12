@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 4869085014857987286}
   - component: {fileID: 8376040630509812595}
   - component: {fileID: 6041961369905287097}
+  - component: {fileID: -6530610238554395293}
+  - component: {fileID: 8533317448297023797}
   m_Layer: 0
   m_Name: GreenKey
-  m_TagString: Untagged
+  m_TagString: GreenKey
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,3 +85,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-6530610238554395293
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5249411191838207596}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5287425419667122880, guid: c79025b4b2076c24f8fbe2f1f97519cb, type: 3}
+--- !u!114 &8533317448297023797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5249411191838207596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d0bffc02e33b40a0b3921a06fca77d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
