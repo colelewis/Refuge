@@ -8,6 +8,7 @@ public class InteractableKey : MonoBehaviour, IInteractable
         // gameObject.GetComponent<Renderer>().material.color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f); // test
         Inventory playerInventory = GameObject.Find("Player").GetComponent<Inventory>();
         playerInventory.Collect(this); // add key to player inventory
-        Destroy(this); // destroy the key in the scene as it has been collected
+        // Destroy(this); // destroy the key in the scene as it has been collected
+        gameObject.SetActive(false);
     }
 }
