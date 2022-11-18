@@ -56,7 +56,13 @@ public class ReticleController : MonoBehaviour
             else {
                 popUpPanel.SetActive(true); // show panel while reticle is focused over interactable object
                 // change popup text to reflect appropriate command for object from dictionary
-                popUpPanel.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = actionMap[interactableHit.transform.name];
+                
+                try {
+                    popUpPanel.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = actionMap[interactableHit.transform.name];
+                }
+                catch (KeyNotFoundException k) {
+                    popUpPanel.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = "Use";
+                }
             }
 
             if (Input.GetKeyDown(KeyCode.E)) { // interact with E

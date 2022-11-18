@@ -3834,7 +3834,7 @@ GameObject:
   - component: {fileID: 801220362}
   - component: {fileID: 801220361}
   - component: {fileID: 801220360}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Ocean
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8758,7 +8758,7 @@ Transform:
   m_Children:
   - {fileID: 801220359}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1692839094
 PrefabInstance:
@@ -8831,7 +8831,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 2a7e0431b79edc744a815e646064bdfc, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a7e0431b79edc744a815e646064bdfc, type: 3}
       propertyPath: m_LocalPosition.x
