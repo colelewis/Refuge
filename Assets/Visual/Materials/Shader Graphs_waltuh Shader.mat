@@ -27,7 +27,7 @@ Material:
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2999
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -55,14 +55,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Depth: 20
+    - _Depth: 35
     - _Depth_Transition: 0.025
     - _Normal_Map_Repeatability: 20
-    - _Normal_Stength: 1
+    - _Normal_Stength: 0.85
     - _QueueControl: 0
-    - _QueueOffset: 0
+    - _QueueOffset: -1
     - _Reflection: 0.6
-    - _Wave_Height: 0.3
+    - _Wave_Height: 12
     m_Colors:
     - _Deep_Water_Color: {r: 0.10980386, g: 0.35294116, b: 0.6392157, a: 0.8235294}
     - _Shallow_Water_Color: {r: 0.25882348, g: 0.8627451, b: 0.8235294, a: 0.3137255}
