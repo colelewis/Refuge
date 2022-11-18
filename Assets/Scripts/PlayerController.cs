@@ -8,22 +8,24 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float walkSpeed = 175.0f;
-    public float sprintSpeed = 262.5f;
-    public float jumpSpeed = 100.0f;
-    public float playerGravity = 50.0f;
+    public float walkSpeed = 15.0f;
+    public float sprintSpeed = 22.0f;
+    public float jumpSpeed = 25.0f;
+    public float playerGravity = 100.0f;
     public Camera camera;
     public float sensitivity = 2.0f;
-    public float xAngleLimit = 45.0f;
+    public float xAngleLimit = 90.0f;
 
     CharacterController cc;
     Vector3 movementDirection = Vector3.zero; // initialize movement vector to zeroes
     float xRotation = 0f; // initialize player camera x rotation to zero
+    CapsuleCollider capsule;
 
     // Start is called before the first frame update
     void Start()
     {
         cc = GetComponent<CharacterController>();
+        capsule = GetComponent<CapsuleCollider>();
         Cursor.lockState = CursorLockMode.Locked; // locks cursor position while playing
         Cursor.visible = false; // keeps cursor from being distracting during camera movement
     }
