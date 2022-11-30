@@ -4,29 +4,27 @@ using UnityEngine;
 
 public class InteractableButton : MonoBehaviour, IInteractable
 {
-    public GameObject innerMaze;
+    public GameObject innerMaze; // so the inner portion can rotate upon press
+    private bool pressed = false; // ensures no multiple rotations
 
-    private float lerpDuration = 3.0f; // button press animation should only take a moment
-    private float initialY = 1.54f; 
-    private float endY = 0f; 
-    private float lerpValue;
-
-    // y = 1.54 -> 1.0 -> 1.54
-
-    public void Interact() {
-        gameObject.GetComponent<Renderer>().material.color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f); // test
-        StartCoroutine(Lerp());
+    public void Start() {
+        Physics.IgnoreCollision(transform.parent.gameObject.transform.GetChild(0).gameObject.GetComponent<Collider>(), GetComponent<Collider>());
     }
 
-    IEnumerator Lerp()
-    {
-        float elapsedTime = 0;
-        while (elapsedTime < lerpDuration)
-        {
-            lerpValue = Mathf.Lerp(initialY, endY, elapsedTime / lerpDuration);
-            elapsedTime += Time.deltaTime;
-            yield return null;
+    IEnumerator simplePress() {
+        pressed = true;
+        transform.position = new Vector3 (transform.position.x, transform.position.y, transform.position.z + 0.07f);
+        yield return new WaitForSeconds(1);
+        transform.position = new Vector3 (transform.position.x, transform.position.y, transform.position.z - 0.07f);
+        innerMaze.transform.Rotate(0f, 0f, 90.0f, Space.Self);
+        pressed = false;
+        transform.parent.gameObject.SetActive(false);
+    }
+
+    public void Interact() {
+        // gameObject.GetComponent<Renderer>().material.color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f); // test
+        if (pressed == false) {
+            StartCoroutine(simplePress());
         }
-        lerpValue = endY;
     }
 }
