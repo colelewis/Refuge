@@ -23,7 +23,8 @@ public class ReticleController : MonoBehaviour
         {"Handle", "Toggle"},
         {"RedKey", "Collect"},
         {"BlueKey", "Collect"},
-        {"GreenKey", "Collect"}
+        {"GreenKey", "Collect"},
+        {"Push_Element", "Push"}
     };
 
 
@@ -34,36 +35,22 @@ public class ReticleController : MonoBehaviour
         Ray reticleRay = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f)); // casts ray from center of viewport
   
         RaycastHit interactableHit;
-        if (Physics.Raycast(reticleRay, out interactableHit, awarenessDistance, 1<<6)) {
+        if (Physics.Raycast(reticleRay, out interactableHit, awarenessDistance)) {
             Debug.Log("Ray collided with " + interactableHit.transform.name + " at " + interactableHit.point + ", " + interactableHit.distance + " units from the center of the screen.");
 
-            if (interactableHit.transform.name == "Handle" && interactableHit.transform.gameObject.GetComponent<InteractableLever>().activated == true) { // if the lever has already been activated, then don't show a popup 
-                popUpPanel.SetActive(false);
-            }
-            else if (interactableHit.transform.name == "Door" && interactableHit.transform.gameObject.GetComponent<InteractableDoor>().open == true) { // if the door is open, show close
-                popUpPanel.SetActive(true); // show panel while reticle is focused over interactable object
-                popUpPanel.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = "Close";
-            }
-            else if (interactableHit.transform.name == "Door" && interactableHit.transform.gameObject.GetComponent<InteractableDoor>().open == false) { // if the door is closed, then show open
-                popUpPanel.SetActive(true); // show panel while reticle is focused over interactable object
-                if (interactableHit.transform.name == "Door" && interactableHit.transform.gameObject.GetComponent<InteractableDoor>().locked == true) { // if the door is locked, then show locked
+                if (interactableHit.transform.gameObject.layer == 6) {
                     popUpPanel.SetActive(true); // show panel while reticle is focused over interactable object
-                    popUpPanel.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = "Locked.";
+                    // change popup text to reflect appropriate command for object from dictionary
+                    
+                    try {
+                        popUpPanel.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = actionMap[interactableHit.transform.name];
+                    }
+                    catch (KeyNotFoundException k) {
+                        popUpPanel.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = "Use";
+                    }
                 } else {
-                    popUpPanel.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = "Open";
+                    popUpPanel.SetActive(false);
                 }
-            }
-            else {
-                popUpPanel.SetActive(true); // show panel while reticle is focused over interactable object
-                // change popup text to reflect appropriate command for object from dictionary
-                
-                try {
-                    popUpPanel.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = actionMap[interactableHit.transform.name];
-                }
-                catch (KeyNotFoundException k) {
-                    popUpPanel.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = "Use";
-                }
-            }
 
             if (Input.GetKeyDown(KeyCode.E)) { // interact with E
                 interactableHit.transform.gameObject.GetComponent<IInteractable>().Interact(); // makes the GameObject that the ray collides with run its Interact() method
