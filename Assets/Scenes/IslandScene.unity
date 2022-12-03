@@ -1324,6 +1324,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 748653613}
     m_Modifications:
+    - target: {fileID: 799849818597197960, guid: 08ef7319e06fe4c7583bf9d55127d464, type: 3}
+      propertyPath: m_TagString
+      value: Button
+      objectReference: {fileID: 0}
     - target: {fileID: 3846603378530696153, guid: 08ef7319e06fe4c7583bf9d55127d464, type: 3}
       propertyPath: m_Name
       value: button (2)
@@ -1516,6 +1520,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3787562803108677989, guid: 01cf47dad38614c5496418c2a573f7d7, type: 3}
+      propertyPath: m_TagString
+      value: Handle
+      objectReference: {fileID: 0}
     - target: {fileID: 4649749024706720804, guid: 01cf47dad38614c5496418c2a573f7d7, type: 3}
       propertyPath: m_Name
       value: lever (4)
@@ -4636,6 +4644,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3787562803108677989, guid: 01cf47dad38614c5496418c2a573f7d7, type: 3}
+      propertyPath: m_TagString
+      value: Handle
+      objectReference: {fileID: 0}
     - target: {fileID: 4649749024706720804, guid: 01cf47dad38614c5496418c2a573f7d7, type: 3}
       propertyPath: m_Name
       value: lever (3)
@@ -6013,6 +6025,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3787562803108677989, guid: 01cf47dad38614c5496418c2a573f7d7, type: 3}
+      propertyPath: m_TagString
+      value: Handle
+      objectReference: {fileID: 0}
     - target: {fileID: 4649749024706720804, guid: 01cf47dad38614c5496418c2a573f7d7, type: 3}
       propertyPath: m_Name
       value: lever (1)
@@ -6704,6 +6720,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 748653613}
     m_Modifications:
+    - target: {fileID: 799849818597197960, guid: 08ef7319e06fe4c7583bf9d55127d464, type: 3}
+      propertyPath: m_TagString
+      value: Button
+      objectReference: {fileID: 0}
     - target: {fileID: 3846603378530696153, guid: 08ef7319e06fe4c7583bf9d55127d464, type: 3}
       propertyPath: m_Name
       value: button (1)
@@ -7403,6 +7423,10 @@ PrefabInstance:
     - target: {fileID: 6091312101028373585, guid: 8890036e98c9c284d828eec05949c7c1, type: 3}
       propertyPath: m_Name
       value: BlueKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091312101028373585, guid: 8890036e98c9c284d828eec05949c7c1, type: 3}
+      propertyPath: m_TagString
+      value: Key
       objectReference: {fileID: 0}
     - target: {fileID: 6900465404823863019, guid: 8890036e98c9c284d828eec05949c7c1, type: 3}
       propertyPath: m_RootOrder
@@ -8351,6 +8375,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3787562803108677989, guid: 01cf47dad38614c5496418c2a573f7d7, type: 3}
+      propertyPath: m_TagString
+      value: Handle
+      objectReference: {fileID: 0}
     - target: {fileID: 4649749024706720804, guid: 01cf47dad38614c5496418c2a573f7d7, type: 3}
       propertyPath: m_Name
       value: lever (2)
@@ -10175,6 +10203,74 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de15f52fca5680f4c95a9e0787992d0c, type: 3}
+--- !u!1 &1596660814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1596660817}
+  - component: {fileID: 1596660816}
+  - component: {fileID: 1596660815}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1596660815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596660814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1596660816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596660814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1596660817
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596660814}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 107
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1600406724
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13918,6 +14014,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 748653613}
     m_Modifications:
+    - target: {fileID: 799849818597197960, guid: 08ef7319e06fe4c7583bf9d55127d464, type: 3}
+      propertyPath: m_TagString
+      value: Button
+      objectReference: {fileID: 0}
     - target: {fileID: 3846603378530696153, guid: 08ef7319e06fe4c7583bf9d55127d464, type: 3}
       propertyPath: m_Name
       value: button

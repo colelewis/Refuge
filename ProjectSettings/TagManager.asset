@@ -4,9 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - BlueKey
-  - RedKey
-  - GreenKey
+  - Key
+  - Handle
+  - Button
+  - Journal
   layers:
   - Default
   - TransparentFX

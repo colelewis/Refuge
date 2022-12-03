@@ -18,13 +18,11 @@ public class ReticleController : MonoBehaviour
     Dictionary<string, string> actionMap = new Dictionary<string, string>()
     { // maps objects to their actions, the action then gets placed on the popup panel (i.e., when door is seen, show open)
         // Door is not listed here since text will be custom based on the Door's state
-        // {"Door", "Open"},
         {"Switch", "Toggle"},
         {"Handle", "Toggle"},
-        {"RedKey", "Collect"},
-        {"BlueKey", "Collect"},
-        {"GreenKey", "Collect"},
-        {"Push_Element", "Push"}
+        {"Key", "Collect"},
+        {"Button", "Push"},
+        {"Journal", "Read"}
     };
 
 
@@ -43,7 +41,7 @@ public class ReticleController : MonoBehaviour
                     // change popup text to reflect appropriate command for object from dictionary
                     
                     try {
-                        popUpPanel.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = actionMap[interactableHit.transform.name];
+                        popUpPanel.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = actionMap[interactableHit.transform.tag];
                     }
                     catch (KeyNotFoundException k) {
                         popUpPanel.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = "Use";
@@ -52,7 +50,7 @@ public class ReticleController : MonoBehaviour
                     popUpPanel.SetActive(false);
                 }
 
-            if (Input.GetKeyDown(KeyCode.E)) { // interact with E
+            if (Input.GetKeyDown(KeyCode.E) && interactableHit.transform.gameObject.layer == 6) { // interact with E
                 interactableHit.transform.gameObject.GetComponent<IInteractable>().Interact(); // makes the GameObject that the ray collides with run its Interact() method
             }
 
