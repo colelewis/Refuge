@@ -22,11 +22,11 @@ public class MainMenuRouter : MonoBehaviour
     }
 
     public void HowToPlay() {
-        HowToPlayPanel.SetActive(true);
+        HowToPlayPanel.SetActive(!HowToPlayPanel.activeSelf);
     }
 
     public void About() {
-        AboutPanel.SetActive(true);
+        AboutPanel.SetActive(!AboutPanel.activeSelf);
     }
 
     public void NewGame() {
