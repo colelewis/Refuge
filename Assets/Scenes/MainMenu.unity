@@ -2174,7 +2174,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1725673979
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2576,12 +2576,12 @@ MonoBehaviour:
     while moving the camera with your mouse, find your way to each one and solve
     the puzzle. Once you have all three keys, unlock the central door and learn its
     secret! Your reticle will flash a prompt when viewing an interactable item, at
-    which point follow the command on screen to use it.
+    which point follow the command on screen to use it. Press P to pause the game.
 
 
-    Along the way are 9
-    journal excerpts throughout the island which carry the voices and thoughts of
-    yore, can you find them all?'
+    Along
+    the way are 9 journal excerpts throughout the island which carry the voices and
+    thoughts of yore, can you find them all?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
   m_sharedMaterial: {fileID: 2579344480334362693, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
