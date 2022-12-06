@@ -6,6 +6,7 @@ public class PauseMenuRouter : MonoBehaviour
 {
     public GameObject pausePanel;
     private float oldCamSensitivity;
+    public bool pauseEnabled = true;
 
     public void Start() {
         oldCamSensitivity = gameObject.GetComponentInParent<PlayerController>().sensitivity;
@@ -28,7 +29,7 @@ public class PauseMenuRouter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P)) {
+        if (Input.GetKeyDown(KeyCode.P) && pauseEnabled) {
             pausePanel.SetActive(!pausePanel.activeSelf);
         }
         if (pausePanel.activeSelf == true) { // if paused
