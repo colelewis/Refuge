@@ -15,6 +15,13 @@ public class PlayerController : MonoBehaviour
     public Camera camera;
     public float sensitivity = 2.0f;
     public float xAngleLimit = 90.0f;
+    // private AudioSource audio;
+    // public AudioClip walking;
+    // public AudioClip jump;
+    public AudioSource walking;
+    public AudioSource jump;
+
+    private bool walkPlaying;
 
     CharacterController cc;
     Vector3 movementDirection = Vector3.zero; // initialize movement vector to zeroes
@@ -26,6 +33,7 @@ public class PlayerController : MonoBehaviour
     {
         cc = GetComponent<CharacterController>();
         capsule = GetComponent<CapsuleCollider>();
+        // audio = GetComponent<AudioSource>();
         Cursor.lockState = CursorLockMode.Locked; // locks cursor position while playing
         Cursor.visible = false; // keeps cursor from being distracting during camera movement
     }
@@ -46,15 +54,27 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space) && cc.isGrounded) { // player is on the ground and space is pressed
             movementDirection.y = jumpSpeed;
+            // jump sound
+            walking.mute = true;
+            jump.Play();
+            walking.mute = false;
+
         } else {
             movementDirection.y = verticalDirection;
         }
 
         if (!cc.isGrounded) { // player is in the air
             movementDirection.y -= playerGravity * Time.deltaTime;
+            // walking.Stop();
+        }
+        
+        cc.Move(movementDirection * Time.deltaTime);
+        if (horizontalMovement == 0 && verticalMovement == 0 && cc.isGrounded) {
+            // walking sound
+            walking.mute = false;
+            walking.Play();
         }
 
-        cc.Move(movementDirection * Time.deltaTime);
 
         xRotation += -Input.GetAxis("Mouse Y") * sensitivity;
         xRotation = Mathf.Clamp(xRotation, -xAngleLimit, xAngleLimit);
