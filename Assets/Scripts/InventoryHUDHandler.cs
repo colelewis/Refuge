@@ -7,11 +7,11 @@ public class InventoryHUDHandler : MonoBehaviour
 {
     private List<InteractableKey> playerKeys = new List<InteractableKey>();
 
-    public GameObject red_key_icon;
+    // public GameObject red_key_icon;
     public GameObject blue_key_icon;
     public GameObject green_key_icon;
 
-    public Sprite red_key_filled;
+    // public Sprite red_key_filled;
     public Sprite blue_key_filled;
     public Sprite green_key_filled;
 
@@ -34,18 +34,18 @@ public class InventoryHUDHandler : MonoBehaviour
     void Update()
     {
         foreach (InteractableKey k in playerKeys) {
-            if (k.tag == "RedKey") {
-                red_key_icon.GetComponent<Image>().sprite = red_key_filled;
-            } else {
-                //
-            }
+            // if (k.name == "RedKey") {
+            //     red_key_icon.GetComponent<Image>().sprite = red_key_filled;
+            // } else {
+            //     //
+            // }
 
-            if (k.tag == "GreenKey") {
+            if (k.name == "GreenKey") {
                 green_key_icon.GetComponent<Image>().sprite = green_key_filled;
             } else {
                 //
             }
-            if (k.tag == "BlueKey") {
+            if (k.name == "BlueKey") {
                 blue_key_icon.GetComponent<Image>().sprite = blue_key_filled;
             } else {
 

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -4929516605231976791}
   m_Layer: 6
   m_Name: BlueKey
-  m_TagString: BlueKey
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,14 +27,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6091312101028373585}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
   m_LocalPosition: {x: 119.792145, y: 0.75506294, z: -13.736514}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.049655728, y: 0.04965572, z: 0.38777184}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
 --- !u!33 &7524594879132528974
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -111,3 +111,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d0bffc02e33b40a0b3921a06fca77d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keyCollect: {fileID: 8300000, guid: 2455cd9cc6cd64fccb7da8b03c071567, type: 3}
