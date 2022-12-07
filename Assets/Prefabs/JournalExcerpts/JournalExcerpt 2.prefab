@@ -167,7 +167,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Journal Excerpt 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
   m_sharedMaterial: {fileID: 2579344480334362693, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
@@ -194,7 +194,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -437,7 +437,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "\u201CHow fortunate we were to land someplace so accommodating and isolated,
+    I can\u2019t think of anywhere more fitting for us to hide while the world crumbles.
+    We\u2019ve been here about a week now, and already split into different teams
+    for fishing, building, gathering, everything we need to do to survive. I\u2019d
+    never seen the stars so bright before, the light pollution in the old city always
+    put a glare over the sky. I think I\u2019ll come to like this place more than
+    anything that had come before.\u201D"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
   m_sharedMaterial: {fileID: 2579344480334362693, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
@@ -464,7 +470,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
+  m_fontSize: 57.2
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1

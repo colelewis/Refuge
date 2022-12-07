@@ -167,7 +167,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Journal Excerpt Computer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
   m_sharedMaterial: {fileID: 2579344480334362693, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
@@ -194,7 +194,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -437,7 +437,22 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "\u201CJust a couple of minutes ago I sent out another transmission across
+    the sea that separates us from the rest of the world. It went the same as any
+    other: I turned on the microphone and told them my name is Lorelei, that I and
+    many others are taking refuge on an island surrounded on all sides by dozens
+    of miles of water. I read out the coordinates of the tower three times in a slow,
+    clear voice before pressing the button on the microphone once more to turn it
+    off. Then I wait, we all wait, for anything. From this height, we know the radio
+    signals reach land, but just barely. I repeat this process four times every hour
+    for six hours every day, three other volunteers cycle through every six hours
+    so that we\u2019re constantly broadcasting. I\u2019ve been doing this for eight
+    months now, taking weeks off here and there to help around the island. Everyone
+    on the island is always so hopeful that we\u2019ll find somebody, anybody. They
+    pat us on the back and congratulate us, but they don\u2019t know the dread that
+    comes with each silence between the transmissions. After long enough behind the
+    microphone, even the most hopeful will start to lose faith that there\u2019s
+    anybody out there at all.\u201D"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
   m_sharedMaterial: {fileID: 2579344480334362693, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
@@ -464,7 +479,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
+  m_fontSize: 36.45
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1

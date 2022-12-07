@@ -20,13 +20,15 @@ public class MainDoorEnvironmentalController : MonoBehaviour
     {
         float distance = Vector3.Distance(transform.position, player.transform.position);
         Debug.Log(distance);
-        if (distance < 100) {
+        if (distance < 80) {
             audio.mute = false;
             directionalLight.enabled = false;
-            audio.PlayOneShot(mainDoorFX, 0.09f);
+            audio.PlayOneShot(mainDoorFX, 0.01f);
+            player.transform.GetChild(4).GetComponent<PauseMenuRouter>().pauseEnabled = false; // no saving right before end of the game, helps ensure key state remains intact
         } else {
             directionalLight.enabled = true;
             audio.mute = true;
+            player.transform.GetChild(4).GetComponent<PauseMenuRouter>().pauseEnabled = true;
         }
         
     }

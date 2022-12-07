@@ -167,7 +167,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Journal Excerpt Vault
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
   m_sharedMaterial: {fileID: 2579344480334362693, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
@@ -194,7 +194,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -437,7 +437,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "\"The tower solved more problems than one. Not only were we given hope,
+    but a safe place to store everything we feared could be lost to time, even if
+    in the end, nothing lasts. Today, I counted the following items in the vault,
+    same as yesterday and the day before: 35 gallons of water being kept in wooden
+    barrels we waterproofed using the tree sap, 27 coconuts, which are unfortunately
+    dwindling across the island, we\u2019re cutting the trees down too fast, six
+    hammers, 1200 nails, three wrenches, a ladder, two wooden buckets, and a couple
+    of wooden beams. Rather sparse so far, but it\u2019s coming along as we take
+    better account of what\u2019s all around here.\""
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
   m_sharedMaterial: {fileID: 2579344480334362693, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
@@ -464,7 +472,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
+  m_fontSize: 46.9
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1

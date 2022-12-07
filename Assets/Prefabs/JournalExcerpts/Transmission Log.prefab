@@ -167,7 +167,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Transmission Log
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
   m_sharedMaterial: {fileID: 2579344480334362693, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
@@ -194,7 +194,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -437,7 +437,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "    * Attendant: Lorelei\n    * Date: June 25th, 20XX\n    * Time: 07:00\n   
+    * Response: None\n    * Attendant: Lorelei\n    * Date: June 25th, 20XX\n   
+    * Time: 07:15\n    * Response: None\n    * Attendant: Lorelei\n    * Date: June
+    25th, 20XX\n    * Time: 07:30\n    * Response: None\n    * Attendant: Lorelei\n   
+    * Date: June 25th, 20XX\n    * Time: 07:45\n    * Response: None\n    * Attendant:
+    Lorelei\n    * Date: June 25th, 20XX\n    * Time: 08:00\n    * Response: None\n   
+    * Attendant: Lorelei\n    * Date: June 25th, 20XX\n    * Time: 07:15\n    * Response:
+    None\n    * \u2026"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
   m_sharedMaterial: {fileID: 2579344480334362693, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
@@ -464,7 +471,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
+  m_fontSize: 18
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1

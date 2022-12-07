@@ -167,7 +167,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Journal Excerpt 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
   m_sharedMaterial: {fileID: 2579344480334362693, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
@@ -194,7 +194,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -437,7 +437,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "\"It came from a dream they said, through the ether of sleep and random
+    synapses came our salvation as the smartest among us worked day in and day out
+    to build the gateway to a new world, a perfect world. In the center of the island
+    we watched the ominous door ripple and distort infinitely every second, holding
+    constant only where the frame stood certain, the light filling the inside keeping
+    everyone who hesitantly gathered around at a safe distance while a few fiddled
+    with the machine. They told us we didn\u2019t have to bring anything with us,
+    everything would be taken care of on the other side. We ate all of our food and
+    drank the rest of our remaining water today, one final feast to celebrate the
+    glory and anguish of our time here. Soon, we will become silhouettes of this
+    place and entrust you, dear reader, to join us. Find the keys and then the door,
+    and you will be in Heaven.\""
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
   m_sharedMaterial: {fileID: 2579344480334362693, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
@@ -464,7 +475,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
+  m_fontSize: 40.1
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1

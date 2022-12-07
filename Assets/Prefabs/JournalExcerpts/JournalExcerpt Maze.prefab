@@ -167,7 +167,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Journal Excerpt Maze
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
   m_sharedMaterial: {fileID: 2579344480334362693, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
@@ -194,7 +194,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -437,7 +437,27 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "\"It\u2019s amazing how quickly this maze came up from schematic to right
+    under our feet. I can\u2019t lie though. When I first heard the idea to build
+    a maze to hide a bunch of keys, I was skeptical, more than skeptical really,
+    I thought it sounded insane, like something from a television show. The kids
+    cartoons with the goofy villain who comes up with some silly plan?  Classic,
+    but not in the face of crisis like we were facing. I wasn\u2019t the only person
+    who thought so either. I looked to my left and shared the same expression of
+    disbelief with the person next to me. Absolutely baffled. It hung in silence
+    for a moment, long enough for her to see the faces of those in the crowd and
+    realize she had to keep talking or take it back. After she explained it some
+    more it had started to make a sort of sense. She had two basic points: the monsters
+    aren\u2019t smart, and there are other survivors out there. Even though we had
+    failed, time and time again, to reach anybody else, it stood to reason that the
+    world was large enough that there had to be other people out there. And those
+    horrible things, they weren\u2019t smart either. We had watched numerous of them
+    fall into the water and drown in their mindless pursuit after us as we were escaping
+    by the boats. We put one key in the tower, and a second at the center of the
+    maze. There\u2019s a third one being made as I write this, we have yet to determine
+    where we\u2019ll put it and just how it\u2019ll be secured. One thing is for
+    certain: it takes a human mind to solve these puzzles, and hopefully one day,
+    find us again.\""
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
   m_sharedMaterial: {fileID: 2579344480334362693, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
@@ -464,7 +484,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
+  m_fontSize: 31
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1

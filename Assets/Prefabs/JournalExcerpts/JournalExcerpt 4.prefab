@@ -167,7 +167,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Journal Excerpt 4
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
   m_sharedMaterial: {fileID: 2579344480334362693, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
@@ -194,7 +194,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -437,7 +437,25 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "\"Life here on the island is safe from evil, but vulnerable to just about
+    everything else. Once we\u2019re separated from the world we\u2019re used to,
+    you can really start to see just how frail we truly are. Surrounded by skyscrapers
+    and electricity, predicting the weather, getting about by vehicle, it becomes
+    easy to see ourselves as gods commanding the world around us not knowing that
+    what we\u2019ve built is only a concrete shell to insulate us from the chaos
+    of the unadulterated world. Yesterday, a man climbed a tall tree in pursuit of
+    a coconut wanting to see how quickly he could scale the trunk. Once near the
+    top, he reached out for the fruit which swung gently with each movement he made.
+    All it took was a single second, he reached too far and slipped from the trunk,
+    plummeting nearly 20 feet to the ground, a wet snap welcoming him back to the
+    Earth. You could hear the wailing from nearly halfway across the island, his
+    face had gone pale as he stared down at his shattered leg, pieces of jagged bone
+    breaking through the skin. Here, there are no hospitals, no medicine, and no
+    doctors among us. We did the best we could, tying the leg off, keeping his leg
+    elevated, carrying him gently into the shade where he would eventually pass an
+    hour later when the blood loss became too great. Better he had gone that way,
+    the inevitable infection would have been even worse. On this island, we can only
+    dream of the world we once held in our hands.\""
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
   m_sharedMaterial: {fileID: 2579344480334362693, guid: 1c664223c26604d4a84fa1ccbc31ac8f, type: 2}
@@ -464,7 +482,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
+  m_fontSize: 32.5
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
