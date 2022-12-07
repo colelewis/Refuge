@@ -33,7 +33,6 @@ public class PlayerController : MonoBehaviour
     {
         cc = GetComponent<CharacterController>();
         capsule = GetComponent<CapsuleCollider>();
-        // audio = GetComponent<AudioSource>();
         Cursor.lockState = CursorLockMode.Locked; // locks cursor position while playing
         Cursor.visible = false; // keeps cursor from being distracting during camera movement
     }

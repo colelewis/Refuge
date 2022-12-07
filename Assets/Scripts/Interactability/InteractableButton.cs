@@ -6,9 +6,11 @@ public class InteractableButton : MonoBehaviour, IInteractable
 {
     public GameObject innerMaze; // so the inner portion can rotate upon press
     private bool pressed = false; // ensures no multiple rotations
+    private AudioSource audio;
 
     public void Start() {
         Physics.IgnoreCollision(transform.parent.gameObject.transform.GetChild(0).gameObject.GetComponent<Collider>(), GetComponent<Collider>());
+        audio = GetComponent<AudioSource>();
     }
 
     IEnumerator simplePress() {
@@ -23,6 +25,7 @@ public class InteractableButton : MonoBehaviour, IInteractable
 
     public void Interact() {
         // gameObject.GetComponent<Renderer>().material.color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f); // test
+        audio.Play();
         if (pressed == false) {
             StartCoroutine(simplePress());
         }
