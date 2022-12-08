@@ -29,15 +29,31 @@ public class PlayerController : MonoBehaviour
     float xRotation = 0f; // initialize player camera x rotation to zero
     CapsuleCollider capsule;
 
+    // private InteractableKey[] keys;
+
     void Awake() {
         if(GameObject.Find("LoadHelper(Clone)") != null) {
             loadHelper = GameObject.Find("LoadHelper(Clone)");
             Vector3 loadedPlayerPosition = new Vector3(loadHelper.GetComponent<LoadMemoryManager>().loadedPlayerX, loadHelper.GetComponent<LoadMemoryManager>().loadedPlayerY, loadHelper.GetComponent<LoadMemoryManager>().loadedPlayerZ);
+            Object[] keys = FindObjectsOfType(typeof(InteractableKey));
             foreach (string keyName in loadHelper.GetComponent<LoadMemoryManager>().loadedPlayerInventory) {
-                Debug.Log(keyName);
+                if (keyName == "BlueKey") {
+                    foreach (InteractableKey k in keys) {
+                        if (k.name == "BlueKey") {
+                            k.Interact();
+                        }
+                    }
+                }
+                if (keyName == "GreenKey") {
+                    foreach (InteractableKey k in keys) {
+                        if (k.name == "GreenKey") {
+                            k.Interact();
+                        }
+                    }
+                }
             }
             transform.position = loadedPlayerPosition;
-            // Destroy(loadHelper);
+            Destroy(loadHelper);
         }
     }
 
