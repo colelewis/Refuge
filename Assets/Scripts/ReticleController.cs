@@ -34,7 +34,7 @@ public class ReticleController : MonoBehaviour
   
         RaycastHit interactableHit;
         if (Physics.Raycast(reticleRay, out interactableHit, awarenessDistance)) {
-            Debug.Log("Ray collided with " + interactableHit.transform.name + " at " + interactableHit.point + ", " + interactableHit.distance + " units from the center of the screen.");
+            // Debug.Log("Ray collided with " + interactableHit.transform.name + " at " + interactableHit.point + ", " + interactableHit.distance + " units from the center of the screen.");
 
                 if (interactableHit.transform.gameObject.layer == 6) {
                     popUpPanel.SetActive(true); // show panel while reticle is focused over interactable object

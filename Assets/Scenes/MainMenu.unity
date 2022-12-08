@@ -379,6 +379,7 @@ MonoBehaviour:
   MainMenu: {fileID: 622852651}
   HowToPlayPanel: {fileID: 1725673978}
   AboutPanel: {fileID: 361436951}
+  loadMemoryManager: {fileID: 2545588829250768928, guid: 1fb3a4fd858c0429f90ef8ac4b543d30, type: 3}
 --- !u!1 &361436951
 GameObject:
   m_ObjectHideFlags: 0

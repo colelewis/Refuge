@@ -8,6 +8,7 @@ TagManager:
   - Handle
   - Button
   - Journal
+  - Loader
   layers:
   - Default
   - TransparentFX

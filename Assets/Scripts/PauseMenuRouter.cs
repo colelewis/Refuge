@@ -75,6 +75,5 @@ class SaveData {
     public float playerPositionX;
     public float playerPositionY;
     public float playerPositionZ;
-    public List<string> playerInventory;
-
+    public List<string> playerInventory = new List<string>();
 }

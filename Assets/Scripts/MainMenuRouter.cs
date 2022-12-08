@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 using UnityEngine;
 
 public class MainMenuRouter : MonoBehaviour
@@ -7,6 +9,9 @@ public class MainMenuRouter : MonoBehaviour
     public GameObject MainMenu;
     public GameObject HowToPlayPanel;
     public GameObject AboutPanel;
+    public GameObject loadMemoryManager;
+
+    private GameObject loadedPlayer;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +23,22 @@ public class MainMenuRouter : MonoBehaviour
     }
 
     public void Load() {
-        // load save state
+        if (File.Exists(Application.persistentDataPath + "/refuge.save")) {
+            BinaryFormatter b = new BinaryFormatter();
+            FileStream loadedSaveFile = File.Open(Application.persistentDataPath + "/refuge.save", FileMode.Open);
+            SaveData loadedSaveData = (SaveData)b.Deserialize(loadedSaveFile);
+            loadedSaveFile.Close();
+            Debug.Log(loadedSaveData.playerPositionX + "," + loadedSaveData.playerPositionY + "," + loadedSaveData.playerPositionZ);
+            // Debug.Log(loadedSaveData.playerInventory);
+            Instantiate(loadMemoryManager);
+            loadMemoryManager.GetComponent<LoadMemoryManager>().loadedPlayerX = loadedSaveData.playerPositionX;
+            loadMemoryManager.GetComponent<LoadMemoryManager>().loadedPlayerY = loadedSaveData.playerPositionY;
+            loadMemoryManager.GetComponent<LoadMemoryManager>().loadedPlayerZ = loadedSaveData.playerPositionZ;
+            loadMemoryManager.GetComponent<LoadMemoryManager>().loadedPlayerInventory = loadedSaveData.playerInventory;
+            UnityEngine.SceneManagement.SceneManager.LoadScene("IslandScene");
+        } else {
+            Debug.LogError("There is no save file present.");
+        }
     }
 
     public void HowToPlay() {
