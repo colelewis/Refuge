@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Leaves
+  m_Name: Leaves 2
   m_Shader: {fileID: -6465566751694194690, guid: 29c0f0c573f0300408ba36c5894f6dc2, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -110,7 +110,7 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
-    - _MovementIntensity: 0.007
+    - _MovementIntensity: 0.002
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
