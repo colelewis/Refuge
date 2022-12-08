@@ -9,9 +9,9 @@ public class LoadMemoryManager : MonoBehaviour
     public float loadedPlayerZ;
     public List<string> loadedPlayerInventory;
     
-    // Start is called before the first frame update
+    // // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(this);
     }
 }

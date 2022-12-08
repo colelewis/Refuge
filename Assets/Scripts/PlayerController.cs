@@ -29,6 +29,18 @@ public class PlayerController : MonoBehaviour
     float xRotation = 0f; // initialize player camera x rotation to zero
     CapsuleCollider capsule;
 
+    void Awake() {
+        if(GameObject.Find("LoadHelper(Clone)") != null) {
+            loadHelper = GameObject.Find("LoadHelper(Clone)");
+            Vector3 loadedPlayerPosition = new Vector3(loadHelper.GetComponent<LoadMemoryManager>().loadedPlayerX, loadHelper.GetComponent<LoadMemoryManager>().loadedPlayerY, loadHelper.GetComponent<LoadMemoryManager>().loadedPlayerZ);
+            foreach (string keyName in loadHelper.GetComponent<LoadMemoryManager>().loadedPlayerInventory) {
+                Debug.Log(keyName);
+            }
+            transform.position = loadedPlayerPosition;
+            // Destroy(loadHelper);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,15 +48,6 @@ public class PlayerController : MonoBehaviour
         capsule = GetComponent<CapsuleCollider>();
         Cursor.lockState = CursorLockMode.Locked; // locks cursor position while playing
         Cursor.visible = false; // keeps cursor from being distracting during camera movement
-        if(GameObject.Find("LoadHelper(Clone)") != null) {
-            loadHelper = GameObject.Find("LoadHelper(Clone)");
-            Vector3 loadedPlayerPosition = new Vector3(loadHelper.GetComponent<LoadMemoryManager>().loadedPlayerX, loadHelper.GetComponent<LoadMemoryManager>().loadedPlayerY, loadHelper.GetComponent<LoadMemoryManager>().loadedPlayerZ);
-            // foreach (string keyName in loadHelper.GetComponent<LoadMemoryManager>().loadedPlayerInventory) {
-            //     Debug.Log(keyName);
-            // }
-            transform.position = loadedPlayerPosition;
-            Debug.Log(loadedPlayerPosition);
-        }
     }
 
     // Update is called once per frame

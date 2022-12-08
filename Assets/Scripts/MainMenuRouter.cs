@@ -28,13 +28,12 @@ public class MainMenuRouter : MonoBehaviour
             FileStream loadedSaveFile = File.Open(Application.persistentDataPath + "/refuge.save", FileMode.Open);
             SaveData loadedSaveData = (SaveData)b.Deserialize(loadedSaveFile);
             loadedSaveFile.Close();
-            Debug.Log(loadedSaveData.playerPositionX + "," + loadedSaveData.playerPositionY + "," + loadedSaveData.playerPositionZ);
-            // Debug.Log(loadedSaveData.playerInventory);
-            Instantiate(loadMemoryManager);
+            Debug.Log(loadedSaveData.playerInventory);
             loadMemoryManager.GetComponent<LoadMemoryManager>().loadedPlayerX = loadedSaveData.playerPositionX;
             loadMemoryManager.GetComponent<LoadMemoryManager>().loadedPlayerY = loadedSaveData.playerPositionY;
             loadMemoryManager.GetComponent<LoadMemoryManager>().loadedPlayerZ = loadedSaveData.playerPositionZ;
             loadMemoryManager.GetComponent<LoadMemoryManager>().loadedPlayerInventory = loadedSaveData.playerInventory;
+            Instantiate(loadMemoryManager);
             UnityEngine.SceneManagement.SceneManager.LoadScene("IslandScene");
         } else {
             Debug.LogError("There is no save file present.");
