@@ -22,7 +22,8 @@ public class ReticleController : MonoBehaviour
         {"Handle", "Toggle"},
         {"Key", "Collect"},
         {"Button", "Push"},
-        {"Journal", "Read"}
+        {"Journal", "Read"},
+        {"FinalDoor", "Travel"}
     };
 
 

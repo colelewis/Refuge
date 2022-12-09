@@ -9,6 +9,7 @@ TagManager:
   - Button
   - Journal
   - Loader
+  - FinalDoor
   layers:
   - Default
   - TransparentFX
