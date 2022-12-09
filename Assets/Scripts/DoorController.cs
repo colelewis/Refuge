@@ -14,17 +14,12 @@ public class DoorController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(!open)
-        {
             startY = transform.position.y;
             openY = startY + openDistance;
-        }
-        else
+        if(open)
         {
-            openY = transform.position.y;
-            startY = openY - openDistance;
+            transform.position = new Vector3(transform.position.x, openY, transform.position.z);
         }
-        
     }
 
     // Update is called once per frame
