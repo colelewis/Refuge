@@ -99,8 +99,12 @@ public class PlayerController : MonoBehaviour
         cc.Move(movementDirection * Time.deltaTime);
         if (horizontalMovement == 0 && verticalMovement == 0 && cc.isGrounded) {
             // walking sound
-            walking.mute = false;
+            walking.mute = true;
             walking.Play();
+        }
+        else
+        {
+            walking.mute = false;
         }
 
 
