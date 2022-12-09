@@ -12448,6 +12448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40a5c08738c1f4523a64766da86ef86c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundtrackPlayer: {fileID: 0}
   mainDoorFX: {fileID: 8300000, guid: 2e2ac783ddcc448dcbeb9a028e2bcb0a, type: 3}
   directionalLight: {fileID: 2053112908}
   player: {fileID: 1772602724}
