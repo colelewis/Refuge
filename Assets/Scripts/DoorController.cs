@@ -6,15 +6,25 @@ public class DoorController : MonoBehaviour
 {
 
     public float openDistance;
+    public bool open = false;
 
     private float startY;
     private float openY;
-    private bool open = false;
+    
     // Start is called before the first frame update
     void Start()
     {
-        startY = transform.position.y;
-        openY = startY + openDistance;
+        if(!open)
+        {
+            startY = transform.position.y;
+            openY = startY + openDistance;
+        }
+        else
+        {
+            openY = transform.position.y;
+            startY = openY - openDistance;
+        }
+        
     }
 
     // Update is called once per frame
