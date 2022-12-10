@@ -1,16 +1,29 @@
 # Trailer TODO
-[12] 1. Opening flyover shot
-[] 2. Player getting hardlocked shot
-[] 3. Best music track over it
-[] 4. Player getting mad in maze.
-[] 5. Water shot at end.
-[] 6. Player trying to jump into water
-[] 7. Pressing E on keyboard.
-[] 8. Spooky portal jumpscare
-[] 9. Picking up key
+Act I Exploration
+[] Best music track over it
+[0:12] Opening flyover shot
+[] Player trying to jump into water
+[] Player in forest
+[] Player climbs hill?
+[] Player splashing in river
+Act II Reading?
+[] player walks into cabin
+[] Player opens a journal entry
 
+Act III Puzzles!
+[] Portal Jumpscare Sound effect.
+[] Spooky Music plays
+[] Player getting hardlocked shot
+[] Player getting mad in maze
+[] Player spams lever over and over
 
-Small bugs
+[] Player walking up to a key
+[] Pressing E on keyboard irl.
+Act IV Outro
+[] Music Cut/Fade
+[] Water shot at end.
+
+Small bugs lits
 collider below water
 Sticking out walls in maze
 gold lever opens blue gate
