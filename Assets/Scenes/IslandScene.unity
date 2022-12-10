@@ -4228,7 +4228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d0dc31bd49663d745a25acd3e1e28e38, type: 3}
       propertyPath: m_Name
-      value: rat
+      value: IK Animated rat jr
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
