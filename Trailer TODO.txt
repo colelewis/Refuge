@@ -1,0 +1,23 @@
+# Trailer TODO
+[12] 1. Opening flyover shot
+[] 2. Player getting hardlocked shot
+[] 3. Best music track over it
+[] 4. Player getting mad in maze.
+[] 5. Water shot at end.
+[] 6. Player trying to jump into water
+[] 7. Pressing E on keyboard.
+[] 8. Spooky portal jumpscare
+[] 9. Picking up key
+
+
+Small bugs
+collider below water
+Sticking out walls in maze
+gold lever opens blue gate
+Final Key room
+Spooky music and happy music overlapping
+Music too loud
+Excerpts overloading	
+Shack doorway too low
+Rocks need colliders
+Menu doesn't match island
